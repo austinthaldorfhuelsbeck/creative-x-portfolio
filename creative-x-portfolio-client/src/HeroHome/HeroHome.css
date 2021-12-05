@@ -75,3 +75,33 @@
 .scroll-link-text {
 	white-space: nowrap;
 }
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 991px) {
+  .hero-image-home {
+    position: static;
+    left: auto;
+    width: 100%;
+    max-width: 100%;
+    margin-top: 46px;
+  }
+
+  .section.hero-home {
+    padding-top: 86px;
+    padding-bottom: 4px;
+  }
+
+  .container-default {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-align: stretch;
+    align-items: stretch;
+  }
+
+  .grid-2-columns.hero-home {
+    grid-row-gap: 0px;
+    grid-template-columns: 1fr;
+  }
+}
