@@ -1,3 +1,4 @@
+import ServicesSection from "../Home/ServicesSection/ServicesSection"
 import "./Footer.css"
 
 export default function Footer({ scrollToTop }) {
@@ -16,6 +17,7 @@ export default function Footer({ scrollToTop }) {
           <p>Lorem ipsum dolor sit amet, consectetur adipisng elit. Mi odio sed sapien quisque posuere.</p>
         </div>
       </div>
+      <ServicesSection alt={true} />
     </footer>
   )
 }

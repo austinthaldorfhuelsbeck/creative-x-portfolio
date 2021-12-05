@@ -3,10 +3,10 @@ import "./ContactSection.css"
 
 export default function ContactSection() {
   return (
-    <div id="contact" className="section get-in-touch">
+    <div id="contact" className="section say-hello">
       <div className="container-medium">
         <div className="text-center">
-          <h2>Get In Touch</h2>
+          <h2>Say Hello</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit lacus nisi, erat sed porta. Sem bibendum eu dui convallis. Et id.</p>
           <div className="mg-top-32px">
             <Link to="/contact" className="button-primary w-button">

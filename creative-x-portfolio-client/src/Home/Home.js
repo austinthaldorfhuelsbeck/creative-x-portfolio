@@ -10,7 +10,7 @@ export default function Home() {
     <div>
       <NavBar />
       <HeroHome />
-      <ServicesSection />
+      <ServicesSection alt={false} />
       <PortfolioSection />
       <AboutSection />
       <ContactSection />
