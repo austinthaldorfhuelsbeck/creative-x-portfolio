@@ -118,6 +118,14 @@ img {
   margin-top: 24px;
 }
 
+.container-medium {
+  max-width: 930px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 24px;
+  padding-left: 24px;
+}
+
 /* UTILITY */
 
 .mg-top-32px {
@@ -178,4 +186,8 @@ img {
 
 .list-style-none {
   list-style: none;
+}
+
+.text-center {
+  text-align: center;
 }
