@@ -1,6 +1,7 @@
 /* FONTS */
 
 body {
+  background-color: #e8ebe8;
   font-family: 'Panchang', sans-serif;
   font-size: 18px;
   line-height: 30px;
@@ -21,18 +22,10 @@ h1 {
 a {
   transition: color 350ms ease;
   color: #191919;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 /* UNIVERSAL */
-
-.w-container-default {
-  max-width: 1290px;
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: 24px;
-  padding-left: 24px;
-}
 
 .w-inline-block {
   max-width: 100%;
@@ -51,6 +44,20 @@ a {
   grid-auto-columns: 1fr;
   grid-row-gap: 16px;
   grid-column-gap: 16px;
+}
+
+.w-container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 940px;
+}
+
+.container-default {
+  max-width: 1290px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 24px;
+  padding-left: 24px;
 }
 
 .grid-2-columns {

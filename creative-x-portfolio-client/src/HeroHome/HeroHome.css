@@ -41,7 +41,7 @@
 .hero-image-home {
   position: absolute;
   left: -109%;
-  bottom: -70%;
+  top: -365px;
   z-index: -1;
   width: 616px;
   max-width: 616%;
@@ -50,6 +50,7 @@
 .scroll-down-link {
   position: relative;
   right: 32px;
+  top: 250px;
   display: flex;
   -webkit-box-align: center;
   align-items: center;
