@@ -17,9 +17,8 @@ export default function HeroImage() {
         <div className="scroll-link-text">Scroll Down</div>
         <img
           src={arrowImgSrc}
-          loading="lazy"
           alt="Scroll Down"
-          class="scroll-down-animate scroll-down-image"
+          class="scroll-down-image"
         ></img>
       </a>
     </div>

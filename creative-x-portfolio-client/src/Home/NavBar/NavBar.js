@@ -4,7 +4,7 @@ export default function NavBar() {
   const navItems = [
     {
       title: "Home",
-      link: "#",
+      link: "/",
     },
     {
       title: "Portfolio",
@@ -23,7 +23,7 @@ export default function NavBar() {
   return (
     <div className="container-default w-container">
       <div className="header-wrapper">
-        <ul className="nav-bar">
+        <ul className="list-style-none">
           {navItems.map((item) => (
             <li key={item.title} className="nav-item">
               <a href={item.link}>{item.title}</a>
