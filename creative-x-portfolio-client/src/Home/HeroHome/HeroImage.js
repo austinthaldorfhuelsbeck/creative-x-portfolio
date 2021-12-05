@@ -1,3 +1,5 @@
+import { Link } from "react-scroll"
+
 export default function HeroImage() {
   const imgSrc =
   "https://assets.website-files.com/6075067ce8506664f2bab8ef/607510feed2178915ca59333_hero-homage-image-creative-x-webflow-template.jpg"
@@ -14,7 +16,7 @@ export default function HeroImage() {
         className="hero-image-home"
       />
       <a href="#services" className="scroll-down-link w-inline-block">
-        <div className="scroll-link-text">Scroll Down</div>
+        <Link smooth to="services" className="scroll-link-text">Scroll Down</Link>
         <img
           src={arrowImgSrc}
           alt="Scroll Down"

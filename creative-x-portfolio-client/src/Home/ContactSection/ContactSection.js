@@ -3,7 +3,7 @@ import "./ContactSection.css"
 
 export default function ContactSection() {
   return (
-    <div className="section get-in-touch">
+    <div id="contact" className="section get-in-touch">
       <div className="container-medium">
         <div className="text-center">
           <h2>Get In Touch</h2>

@@ -1,3 +1,5 @@
+import { Link } from "react-scroll"
+
 export default function HeroHeader() {
   const heroData = {
     subtext: "Austin Thaldorf-Huelsbeck",
@@ -11,7 +13,7 @@ export default function HeroHeader() {
       <h1 className="mg-top-32px">{heroData.title}</h1>
       <p className="paragraph-large">{heroData.paragraph}</p>
       <div className="mg-top-76px">
-        <div className="button-primary w-button">Say Hello</div>
+        <Link smooth to="contact" className="button-primary w-button">Say Hello</Link>
       </div>
     </div>
   )
