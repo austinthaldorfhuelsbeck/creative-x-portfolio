@@ -126,10 +126,25 @@ img {
   padding-left: 24px;
 }
 
+.flex.center {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
 /* UTILITY */
 
 .mg-top-32px {
   margin-top: 32px;
+}
+
+.mg-top-48px {
+  margin-top: 48px;
+}
+
+.mg-top-56px {
+  margin-top: 56px;
 }
 
 .mg-top-76px {
@@ -190,4 +205,20 @@ img {
 
 .text-center {
   text-align: center;
+}
+
+.about-image-hero {
+  position: absolute;
+  width: 70%;
+  left: 250px;
+  top: 375px;
+  right: 0%;
+  bottom: 11%;
+  z-index: -1;
+}
+
+.divider {
+  width: 100%;
+  height: 2px;
+  background-color: #191919;
 }

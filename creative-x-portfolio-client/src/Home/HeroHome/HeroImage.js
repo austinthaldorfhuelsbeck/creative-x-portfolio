@@ -1,12 +1,8 @@
 import { Link } from "react-scroll"
 
-export default function HeroImage() {
-  const imgSrc =
-  "https://assets.website-files.com/6075067ce8506664f2bab8ef/607510feed2178915ca59333_hero-homage-image-creative-x-webflow-template.jpg"
-
-  const arrowImgSrc =
-    "https://assets.website-files.com/6075067ce8506664f2bab8ef/6075a30866432ef6b6513e0e_arrow-down-creative-x-webflow-template.svg"
-
+export default function HeroImage({ imgSrc }) {
+  const arrowImgSrc = "https://assets.website-files.com/6075067ce8506664f2bab8ef/6075a30866432ef6b6513e0e_arrow-down-creative-x-webflow-template.svg"
+  
   return (
     <div className="hero-home-image-container">
       <img
