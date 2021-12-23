@@ -1,24 +1,20 @@
 export const nav = [
   {
-    nav_id: "1",
     title: "Home",
     link: "/",
     order: 1,
   },
   {
-    nav_id: "2",
     title: "Portfolio",
     link: "portfolio",
     order: 2,
   },
   {
-    nav_id: "3",
     title: "About",
     link: "about",
     order: 3,
   },
   {
-    nav_id: "4",
     title: "Contact",
     link: "contact",
     order: 4,
@@ -27,7 +23,6 @@ export const nav = [
 
 export const sections = [
   {
-    section_id: 1,
     title: "hero",
     img_src:
       "https://assets.website-files.com/6075067ce8506664f2bab8ef/607510feed2178915ca59333_hero-homage-image-creative-x-webflow-template.jpg",
