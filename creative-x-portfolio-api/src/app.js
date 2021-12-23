@@ -6,7 +6,7 @@ const app = express()
 // ROUTES
 const navRouter = require("./nav/nav.router")
 const sectionsRouter = require("./sections/sections.router")
-// const projectsRouter = require("./projects/projects.router")
+const projectsRouter = require("./projects/projects.router")
 // ERROR HANDLERS
 const notFound = require("./errors/notFound")
 const errorHandler = require("./errors/errorHandler")
@@ -21,7 +21,7 @@ app.use(express.json())
 // Route handlers
 app.use("/nav", navRouter)
 app.use("/sections", sectionsRouter)
-// app.use("/projects", projectsRouter)
+app.use("/projects", projectsRouter)
 
 // Error handlers
 app.use(notFound)
