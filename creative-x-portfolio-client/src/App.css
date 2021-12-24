@@ -2,7 +2,7 @@
 
 body {
   background-color: #e8ebe8;
-  font-family: 'Panchang', sans-serif;
+  font-family: "Panchang", sans-serif;
   font-size: 18px;
   line-height: 30px;
   font-weight: 500;
@@ -157,7 +157,7 @@ img {
 }
 
 .scroll-link-text {
-	white-space: nowrap;
+  white-space: nowrap;
 }
 
 .scroll-down-link {
@@ -177,6 +177,7 @@ img {
   letter-spacing: 0.14em;
   text-decoration: none;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .scroll-down-image {

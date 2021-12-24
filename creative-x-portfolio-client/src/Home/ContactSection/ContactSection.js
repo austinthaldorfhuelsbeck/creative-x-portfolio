@@ -8,7 +8,7 @@ export default function ContactSection({ header, paragraph, scrollToTop }) {
         <div className="text-center">
           <h2>{header}</h2>
           <p>{paragraph}</p>
-          <ContactButton />
+          <ContactButton scrollToTop={scrollToTop} />
         </div>
       </div>
       <div className="text-big-cta top">Contact Me</div>
