@@ -5,25 +5,25 @@ const knex = require("../db/connection")
  * Create returns a list, of which we only need the first element
  */
 function list() {
-  return knex("section").select("*").orderBy("order")
+  return knex("sections").select("*").orderBy("order")
 }
 function create(section) {
-  return knex("section")
+  return knex("sections")
     .insert(section)
     .returning("*")
     .then((createdSection) => createdSection[0])
 }
 function read(id) {
-  return knex("section as s").select("*").where({ "s.section_id": id })
+  return knex("sections as s").select("*").where({ "s.section_id": id })
 }
 function update(updatedSection, id) {
-  return knex("section")
+  return knex("sections")
     .select("*")
     .where({ section_id: id })
     .update(updatedSection, "*")
 }
 function destroy(id) {
-  return knex("section").where({ section_id: id }).del()
+  return knex("sections").where({ section_id: id }).del()
 }
 
 module.exports = {

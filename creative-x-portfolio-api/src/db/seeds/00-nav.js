@@ -1,11 +1,8 @@
-import { nav } from "./data"
+const nav = require("./00-nav.json")
 
 exports.seed = function (knex) {
   // Deletes ALL existing entries
-  return knex("table_name")
-    .del()
-    .then(function () {
-      // Inserts seed entries
-      return knex("table_name").insert(nav)
-    })
+  return knex.raw("TRUNCATE TABLE nav RESTART IDENTITY CASCADE").then(() => {
+    return knex("nav").insert(nav)
+  })
 }

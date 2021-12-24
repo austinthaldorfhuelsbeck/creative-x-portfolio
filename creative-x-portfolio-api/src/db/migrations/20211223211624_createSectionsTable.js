@@ -6,6 +6,7 @@ exports.up = function (knex) {
     table.string("subtext")
     table.string("header")
     table.text("paragraph")
+    table.integer("order")
     table.timestamps(true, true)
   })
 }

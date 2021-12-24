@@ -58,7 +58,10 @@ function read(req, res) {
   res.json({ data })
 }
 async function update(req, res) {
-  const data = await service.update(res.locals.nav, res.locals.nav.nav_id)
+  const data = await service.update(
+    res.locals.project,
+    res.locals.project.project_id
+  )
   res.json({ data: data[0] })
 }
 async function destroy(req, res, next) {
@@ -71,6 +74,6 @@ module.exports = {
   list: [asyncErrorBoundary(list)],
   create: [asyncErrorBoundary(isValidProject), create],
   read: [asyncErrorBoundary(projectExists), read],
-  update: [asyncErrorBoundary(projectExists), update],
+  update: [asyncErrorBoundary(isValidProject), update],
   delete: [asyncErrorBoundary(projectExists), destroy],
 }

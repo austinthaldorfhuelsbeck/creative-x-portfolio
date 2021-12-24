@@ -1,11 +1,10 @@
-import { sections } from "./data"
+const sections = require("./01-sections.json")
 
 exports.seed = function (knex) {
   // Deletes ALL existing entries
-  return knex("table_name")
-    .del()
-    .then(function () {
-      // Inserts seed entries
-      return knex("table_name").insert(sections)
+  return knex
+    .raw("TRUNCATE TABLE sections RESTART IDENTITY CASCADE")
+    .then(() => {
+      return knex("sections").insert(sections)
     })
 }

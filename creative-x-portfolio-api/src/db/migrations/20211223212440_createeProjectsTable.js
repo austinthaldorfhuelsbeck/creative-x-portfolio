@@ -5,7 +5,7 @@ exports.up = function (knex) {
     table.string("url")
     table.string("category")
     table.string("img")
-    table.date("date")
+    table.string("date")
     table.timestamps(true, true)
   })
 }

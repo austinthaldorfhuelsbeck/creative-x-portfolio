@@ -1,11 +1,10 @@
-import { projects } from "./data"
+const projects = require("./02-projects.json")
 
 exports.seed = function (knex) {
   // Deletes ALL existing entries
-  return knex("table_name")
-    .del()
-    .then(function () {
-      // Inserts seed entries
-      return knex("table_name").insert(projects)
+  return knex
+    .raw("TRUNCATE TABLE projects RESTART IDENTITY CASCADE")
+    .then(() => {
+      return knex("projects").insert(projects)
     })
 }

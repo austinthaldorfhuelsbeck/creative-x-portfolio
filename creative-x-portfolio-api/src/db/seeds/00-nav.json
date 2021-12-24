@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Home",
+    "link": "/",
+    "order": 1
+  },
+  {
+    "title": "Portfolio",
+    "link": "portfolio",
+    "order": 2
+  },
+  {
+    "title": "About",
+    "link": "about",
+    "order": 3
+  },
+  {
+    "title": "Contact",
+    "link": "contact",
+    "order": 4
+  }
+]
