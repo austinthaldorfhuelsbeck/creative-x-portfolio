@@ -18,6 +18,8 @@ export default function Home({ scrollToTop }) {
   const [sectionsErr, setSectionsErr] = useState([])
   const [projects, setProjects] = useState([])
   const [projectsErr, setProjectsErr] = useState([])
+  const [services, setServices] = useState([])
+  const [servicesErr, setServicesErr] = useState([])
 
   // Load data for props
   useEffect(() => {
@@ -33,6 +35,10 @@ export default function Home({ scrollToTop }) {
       .then((res) => res.json())
       .then((res) => setProjects(res.data))
       .catch(setProjectsErr)
+    fetch(`${url}/services`)
+      .then((res) => res.json())
+      .then((res) => setServices(res.data))
+      .catch(setServicesErr)
   }, [url])
 
   // Find each section and store as objects
@@ -43,11 +49,12 @@ export default function Home({ scrollToTop }) {
   return (
     <div>
       {navErr}
+      {servicesErr}
       {sectionsErr}
       {projectsErr}
       <NavBar nav={nav} />
       <HeroHome {...hero} />
-      <ServicesSection alt={false} />
+      <ServicesSection services={services} alt={false} />
       <PortfolioSection projects={projects} scrollToTop={scrollToTop} />
       <AboutSection {...about} scrollToTop={scrollToTop} />
       <ContactSection {...contact} scrollToTop={scrollToTop} />

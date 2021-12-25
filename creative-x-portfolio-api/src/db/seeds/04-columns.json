@@ -1,0 +1,18 @@
+[
+  {
+    "service_id": 1,
+    "title": "column-one"
+  },
+  {
+    "service_id": 1,
+    "title": "column-two"
+  },
+  {
+    "service_id": 2,
+    "title": "column-one"
+  },
+  {
+    "service_id": 3,
+    "title": "column-one"
+  }
+]

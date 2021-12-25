@@ -1,0 +1,81 @@
+[
+  {
+    "column_id": 1,
+    "link": false,
+    "title": "HTML5 + CSS3"
+  },
+  {
+    "column_id": 1,
+    "link": false,
+    "title": "JavaScript + Node.js"
+  },
+  {
+    "column_id": 1,
+    "link": false,
+    "title": "React.js"
+  },
+  {
+    "column_id": 2,
+    "link": false,
+    "title": "Java"
+  },
+  {
+    "column_id": 2,
+    "link": false,
+    "title": "PostgreSQL"
+  },
+  {
+    "column_id": 2,
+    "link": false,
+    "title": "Lorem Ipsum"
+  },
+  {
+    "column_id": 3,
+    "link": true,
+    "external": false,
+    "title": "Home",
+    "url": "/"
+  },
+  {
+    "column_id": 3,
+    "link": true,
+    "external": false,
+    "title": "Full Portfolio",
+    "url": "/portfolio"
+  },
+  {
+    "column_id": 3,
+    "link": true,
+    "external": false,
+    "title": "About Me",
+    "url": "/about"
+  },
+  {
+    "column_id": 3,
+    "link": true,
+    "external": false,
+    "title": "Send Me A Message",
+    "url": "/contact"
+  },
+  {
+    "column_id": 4,
+    "link": true,
+    "external": true,
+    "title": "GitHub",
+    "url": "https://github.com/austinthaldorfhuelsbeck"
+  },
+  {
+    "column_id": 4,
+    "link": true,
+    "external": true,
+    "title": "LinkedIn",
+    "url": "https://www.linkedin.com/in/austinhuelsbeck/"
+  },
+  {
+    "column_id": 4,
+    "link": true,
+    "external": true,
+    "title": "Twitter",
+    "url": "https://twitter.com/AustinThaldorf"
+  }
+]

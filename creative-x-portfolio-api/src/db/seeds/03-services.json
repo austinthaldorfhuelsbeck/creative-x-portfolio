@@ -1,0 +1,16 @@
+[
+  {
+    "side": "left",
+    "alt": false,
+    "subtext": "Languages + Skills"
+  },
+  {
+    "side": "left",
+    "subtext": "Menu",
+    "alt": true
+  },
+  {
+    "side": "right",
+    "subtext": "Get In Touch"
+  }
+]
